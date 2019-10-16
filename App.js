@@ -1,13 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Teste!!</Text>
-    </View>
-  );
-}
+import './src/config/ReactotronConfig';
 
 const styles = StyleSheet.create({
   container: {
@@ -17,3 +11,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+console.tron.log('Hello World');
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Teste!!</Text>
+    </View>
+  );
+}
